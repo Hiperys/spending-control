@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyAzej7992ljbn_h5g21cuLw0DLa9bB6pWM',
-    authDomain: 'spending-control-7298c.firebaseapp.com',
-    databaseURL: 'https://spending-control-7298c.firebaseio.com',
-    projectId: 'spending-control-7298c',
-    storageBucket: 'spending-control-7298c.appspot.com',
-    messagingSenderId: '990871624076'
+    apiKey: 'your-key',
+    authDomain: 'your-domain',
+    databaseURL: 'your-db-url',
+    projectId: 'your-project-id',
+    storageBucket: 'your-bucket',
+    messagingSenderId: 'your-id'
   }
 };
 
