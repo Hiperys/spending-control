@@ -8,11 +8,13 @@ import { TransactionComponent } from './transaction/transaction.component';
 import {TransactionService} from './services/transaction.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TransactionComponent
+    TransactionComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
