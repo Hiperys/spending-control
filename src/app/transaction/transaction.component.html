@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let transaction of transactions$ | async">{{ transaction | json}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let transaction of transactionsKeys$ | async">{{ transaction | json}}</li>
+</ul>
+
+<p>total: {{ totalAmount }}</p>
+
+<button (click)="addTransaction()">add</button>
+
+<!--<ul *ngIf="transactionsKeys$ | async as transaction">-->
+  <!--<li>{{ transaction | json}}<li>-->
+<!--</ul>-->
