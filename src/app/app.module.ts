@@ -11,13 +11,18 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/authentication/auth.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import {MatButtonModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatIconModule, MatSidenavModule, MatToolbarModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule} from '@angular/material';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TransactionComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +30,16 @@ import {MatButtonModule, MatToolbarModule} from '@angular/material';
     MatToolbarModule,
     MatCheckboxModule,
     MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    LayoutModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
   ],
   providers: [
     AuthService,

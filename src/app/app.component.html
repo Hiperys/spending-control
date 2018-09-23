@@ -1,18 +1,25 @@
-<mat-checkbox>Hello world?</mat-checkbox>
-<ul>
-  <li *ngFor="let course of courses$ | async">{{ course }}</li>
-</ul>
-<ul>
-  <li *ngFor="let course of courses$ | async">{{ course }}</li>
-</ul>
-<input type="text" #course (keyup.enter)="add(course)" />
-<ul *ngIf="author$ | async as author">
-  <li>{{ author.name }}</li>
-  <li>{{ author.students }}</li>
-  <li>{{ author.isPremium }}</li>
-</ul>
-<p>{{ course$ | async | json}}</p>
-<p>{{ author$ | async | json}}</p>
-<app-transaction></app-transaction>
+<!--<app-navigation>-->
+  <!--<mat-checkbox>Hello world?</mat-checkbox>-->
+  <!--<ul>-->
+    <!--<li *ngFor="let course of courses$ | async">{{ course }}</li>-->
+  <!--</ul>-->
+  <!--<ul>-->
+    <!--<li *ngFor="let course of courses$ | async">{{ course }}</li>-->
+  <!--</ul>-->
+  <!--<input type="text" #course (keyup.enter)="add(course)" />-->
+  <!--<ul *ngIf="author$ | async as author">-->
+    <!--<li>{{ author.name }}</li>-->
+    <!--<li>{{ author.students }}</li>-->
+    <!--<li>{{ author.isPremium }}</li>-->
+  <!--</ul>-->
+  <!--<p>{{ course$ | async | json}}</p>-->
+  <!--<p>{{ author$ | async | json}}</p>-->
+  <!--<app-transaction></app-transaction>-->
 
-<app-login></app-login>
+  <!--<app-login></app-login>-->
+<!--</app-navigation>-->
+
+<app-navbar>
+  <app-dashboard></app-dashboard>
+</app-navbar>
+
