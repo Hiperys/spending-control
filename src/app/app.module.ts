@@ -15,6 +15,7 @@ import {MatButtonModule, MatIconModule, MatSidenavModule, MatToolbarModule, MatL
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    RouterModule.forRoot([
+      { path: '', component: DashboardComponent },
+      { path: 'login', component: LoginComponent },
+    ])
   ],
   providers: [
     AuthService,
