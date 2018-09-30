@@ -16,6 +16,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {RouterModule} from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material';
+import { FormErrorComponent } from './utilities/form-error/form-error.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ import {RouterModule} from '@angular/router';
     TransactionComponent,
     LoginComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    FormErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,9 @@ import {RouterModule} from '@angular/router';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: DashboardComponent },
       { path: 'login', component: LoginComponent },

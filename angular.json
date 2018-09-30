@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "spending-control"
+  "defaultProject": "spending-control",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

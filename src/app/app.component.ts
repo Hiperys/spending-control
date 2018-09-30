@@ -17,8 +17,6 @@ export class AppComponent {
     this.courses$ = db.list('/courses').valueChanges();
     this.course$ = db.object('/courses/1').valueChanges();
     this.author$ = db.object('/authors/1').valueChanges();
-    console.log(this.coursesList$);
-    console.log(this.courses$);
   }
 
   add(course: HTMLInputElement) {

@@ -1,0 +1,7 @@
+<ng-container *ngIf="field.touched && field.invalid">
+  <ng-container *ngFor="let errorMessage of errorMessages; let last = last;">
+    <ng-container *ngIf="field.errors[errorMessage.validator]">
+      <mat-list-item> - {{ getErrorMessage(errorMessage.validator) }}</mat-list-item>
+    </ng-container>
+  </ng-container>
+</ng-container>
