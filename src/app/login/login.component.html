@@ -13,7 +13,8 @@
           <input matInput name="password" type="password" placeholder="Password" formControlName="password">
         </mat-form-field>
         <button mat-raised-button color="primary" type="submit">Login</button>
-        <button mat-raised-button color="primary" type="button" (click)="login()">Login with Google</button>
+        <button mat-raised-button color="primary" type="button" (click)="loginWithGoogle()">Login with Google</button>
+        <button mat-raised-button color="primary" type="button" (click)="loginWithFacebook()">Login with Facebook</button>
         <button mat-raised-button color="primary" type="button" (click)="logout()">Logout</button>
       </form>
     </mat-card-content>

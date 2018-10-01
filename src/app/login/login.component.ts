@@ -24,8 +24,12 @@ export class LoginComponent  {
     console.log(this.form);
   }
 
-  login() {
-    this.auth.login();
+  loginWithGoogle() {
+    this.auth.loginWithGoogle();
+  }
+
+  loginWithFacebook() {
+    this.auth.loginWithFacebook();
   }
 
   logout() {

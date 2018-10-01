@@ -1,4 +1,4 @@
-import {Injectable, OnInit} from '@angular/core';
+import {Injectable} from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import * as firebase from 'firebase/app';
 import {Observable} from 'rxjs';
@@ -13,8 +13,16 @@ export class AuthService {
     this.user$ = this.afAuth.authState;
   }
 
-  login () {
-    this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+  loginWithSocialNetwork (provider) {
+    this.afAuth.auth.signInWithRedirect(provider);
+  }
+
+  loginWithGoogle () {
+    this.loginWithSocialNetwork(new firebase.auth.GoogleAuthProvider());
+  }
+
+  loginWithFacebook () {
+    this.loginWithSocialNetwork(new firebase.auth.FacebookAuthProvider());
   }
 
   logout () {
